@@ -1,0 +1,33 @@
+<head>
+{% block head %}
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+<link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+{#{{ url_for('static', filename='styles.css') }}#}
+{% endblock %}
+</head>
+<body>
+
+{% from 'bootstrap/nav.html' import render_breadcrumb_item %}
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        {{ render_breadcrumb_item('main.index', 'Home') }}
+    </ol>
+</nav>
+<h1>test555</h1>
+<h1>test555</h1>
+<h1>test555</h1><h1>test555</h1>
+<h1>test555</h1>
+<h1>test555</h1>
+<h1>test555</h1>
+<h1>test555</h1>
+<h1>test555</h1>
+<h1>test555</h1>
+<h1>test555</h1>
+<h1>test555</h1>
+<h1>test555</h1>
+<h1>test555</h1>
+
+{{ bootstrap.load_js() }}
+</body>
